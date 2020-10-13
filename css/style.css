@@ -40,6 +40,10 @@ a {
     outline: 4px solid tomato;
     text-align: center;
 }
+.no-padding {
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
 .logo {
     text-decoration: none;
     font-family: Raleway;
@@ -56,11 +60,13 @@ a {
 /* site nav */
 .page-header {
     background-color: var(--white-color);
+    border-bottom: 1px solid #ececec;
 }
 .nav {
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.02em;
+    display: flex;
 }
 .nav .link {
     color: var(--primary-text-color);
@@ -103,15 +109,29 @@ a {
     letter-spacing: 0.06em;
     text-transform: uppercase;
 }
+.activity-list {
+    margin: 0px;
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
 .activity-title {
+    padding-top: 0px;
     margin-top: 0px;
     font-weight: bold;
     line-height: 1.14;
 }
+.work-list {
+    margin: 0px;
+    padding-bottom: 94px;
+}
+
 .items-text {
     color: var(--title-text-color);
     font-size: 16px;
     line-height: 1.19;
+}
+.team {
+    padding: 94px 0px;
 }
 .team-title, .product-title {
     color: var(--primary-text-color);
@@ -122,13 +142,18 @@ a {
     line-height: 1.19;
 }
 .title {
+    margin-top: 0px;
+    margin-bottom: 50px;
     font-weight: bold;
     font-size: 36px;
     line-height: 1.17;
 }
 /* footer */
-footer {
+.footer {
     background-color: #2F303A;
+}
+.footer-content {
+    padding: 60px 0px;
 }
 .studio-footer, .city {
     color: var(--white-color);
@@ -179,8 +204,15 @@ footer {
     color: white;
 }
 /* Портфолио */
-.portfolio {
+/* .portfolio {
     background-color: #E5E5E5;
+} */
+.portfolio-list {
+    padding-bottom: 50px;
+    display: flex;
+}
+.portfolio-content {
+    padding: 94px 0px;
 }
 .product-title {
     font-weight: bold;
