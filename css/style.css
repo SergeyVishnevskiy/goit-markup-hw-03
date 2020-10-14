@@ -38,14 +38,12 @@ img {
     padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 0px;
     width: 1200px;
     outline: 4px solid tomato;
-    text-align: center;
 }
-.no-padding {
-    padding-top: 0px;
-    padding-bottom: 0px;
+.padding {
+    padding-top: 94px;
+    padding-bottom: 94px;
     /* margin: 0px; */
 }
 .logo {
@@ -54,6 +52,7 @@ img {
     font-weight: bold;
     font-size: 26px;
     line-height: 1.19;
+    margin-right: 93px;
 }
 .web { 
     color: var(--accent-color);
@@ -71,7 +70,13 @@ img {
     justify-content: space-between;
     align-items: center;
 }
-.nav {
+.nav-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 32px 0px;
+}
+.nav-list {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.14;
@@ -79,19 +84,18 @@ img {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 32px;
+    }
+.nav-item:not(:last-child) {
+    margin-right: 30px;
 }
-.nav .link {
+.nav-list .link {
     color: var(--primary-text-color);
 }
-.nav .link:hover, .nav .link:focus {
+.nav-list .link:hover, .nav-list .link:focus {
     color: var(--accent-color);
 }
-.nav .link.current {
+.nav-list .link.current {
     color: var(--accent-color);
-}
-.address {
-    justify-content: space-between;
 }
 .contacts {
     color: var(--title-text-color);
@@ -99,6 +103,9 @@ img {
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.02em;
+}
+.contacts:not(last-child) {
+    margin-right: 30px;
 }
 .contacts:hover, .contacts:focus {
     color: var(--accent-color);
@@ -125,10 +132,11 @@ img {
     letter-spacing: 0.06em;
     text-transform: uppercase;
 }
+.activity-box {
+    padding-bottom: 94px;
+}
 .activity-list {
     margin: 0px;
-    padding-top: 94px;
-    padding-bottom: 94px;
 }
 .activity-title {
     padding-top: 0px;
@@ -136,23 +144,14 @@ img {
     font-weight: bold;
     line-height: 1.14;
 }
-.work {
-    margin-bottom: 0px;
-    padding-bottom: 50px;
-}
 .work-list {
     margin: 0px;
-    padding-bottom: 94px;
 }
 
 .items-text {
     color: var(--title-text-color);
     font-size: 16px;
     line-height: 1.19;
-}
-.team {
-    padding: 94px 0px;
-    display: flex;
 }
 .team-title, .product-title {
     color: var(--primary-text-color);
