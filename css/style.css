@@ -24,6 +24,9 @@ body {
 a {
     text-decoration: none;
 }
+img {
+    display: block;
+}
 .list {
     padding: 0px;
     margin: 0px;
@@ -43,6 +46,7 @@ a {
 .no-padding {
     padding-top: 0px;
     padding-bottom: 0px;
+    /* margin: 0px; */
 }
 .logo {
     text-decoration: none;
@@ -62,10 +66,18 @@ a {
     background-color: var(--white-color);
     border-bottom: 1px solid #ececec;
 }
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 .nav {
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.02em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 .nav .link {
     color: var(--primary-text-color);
@@ -75,6 +87,9 @@ a {
 }
 .nav .link.current {
     color: var(--accent-color);
+}
+.address {
+    justify-content: space-between;
 }
 .contacts {
     color: var(--title-text-color);
@@ -119,6 +134,10 @@ a {
     font-weight: bold;
     line-height: 1.14;
 }
+.work {
+    margin-bottom: 0px;
+    padding-bottom: 50px;
+}
 .work-list {
     margin: 0px;
     padding-bottom: 94px;
@@ -131,6 +150,7 @@ a {
 }
 .team {
     padding: 94px 0px;
+    display: flex;
 }
 .team-title, .product-title {
     color: var(--primary-text-color);
