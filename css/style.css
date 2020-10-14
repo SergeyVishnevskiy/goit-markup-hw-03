@@ -73,11 +73,13 @@ img {
 }
 .nav {
     font-weight: 500;
+    font-size: 16px;
     line-height: 1.14;
     letter-spacing: 0.02em;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 32px;
 }
 .nav .link {
     color: var(--primary-text-color);
