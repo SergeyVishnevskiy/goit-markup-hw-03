@@ -61,7 +61,7 @@ img {
 }
 /* site nav */
 .page-header {
-    background-color: var(--white-color);
+    /* background-color: var(--white-color); */
     border-bottom: 1px solid #ececec;
 }
 .main-header {
@@ -142,7 +142,6 @@ img {
     text-transform: uppercase;
 }
 /* ==================== END HERO ==================== */
-
 .activity {
     padding-bottom: 0px;
 }
@@ -183,7 +182,7 @@ img {
 .items-text {
     color: var(--title-text-color);
     line-height: 1.714;
-    font-size: 16px;
+    font-size: inherit;
 }
 .team-title, .product-title {
     color: var(--primary-text-color);
