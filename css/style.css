@@ -131,6 +131,9 @@ img {
     padding-bottom: 200px;
     text-align: center;
     color: var(--white-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .hero-title {
     margin-top: 0px;
@@ -140,6 +143,7 @@ img {
     line-height: 1.36;
     letter-spacing: 0.06em;
     text-transform: uppercase;
+    width: 686px;
 }
 /* ==================== END HERO ==================== */
 .activity {
@@ -167,6 +171,8 @@ img {
     display: flex;
     justify-content: space-between;
     padding-left: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
 .work-item {
     flex-basis: calc((100% - 2 * 30px) / 3);
@@ -203,11 +209,12 @@ img {
 /* footer */
 .footer {
     background-color: #2F303A;
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 .footer-content {
     display: flex;
-    padding-top: 60px;
-    padding-bottom: 60px;
+    
 }
 .footer-address {
     max-width: 270px;
@@ -224,8 +231,6 @@ img {
     color: rgba(255, 255, 255, 0.6);
     font-style: normal;
     line-height: 1.71;
-    padding-bottom: 9px;
-
 }
 .contacts-footer:hover, .contacts-footer:focus {
     color: var(--accent-color);
@@ -234,9 +239,10 @@ img {
     font-style: normal;
     font-weight: 400;
     line-height: 1.71;
-    padding-bottom: 9px;
 }
-
+.adress-items:not(:last-child) {
+    margin-bottom: 9px;
+}
 /* button */
 .button {
     display: inline-block;
@@ -256,7 +262,6 @@ img {
     font-weight: bold;
     letter-spacing: 0.06em;
     padding: 10px 32px;
-    min-width: 200px;
 }
 .button.secondary {
     font-family: Roboto;
@@ -275,6 +280,11 @@ img {
 }
 .portfolio-button:not(:last-child) {
     margin-right: 8px;
+}
+.portfolio__menu-list {
+    display: flex;
+    justify-content: center; 
+    flex-wrap: wrap;
 }
 .portfolio-list {
     display: flex;
@@ -304,13 +314,13 @@ img {
     border-top: none;
     padding: 20px 24px;
     background-color: #FFFFFF;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
 }
 .shadow {
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    text-align: center;
 }
 
 /* <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap" rel="stylesheet">
