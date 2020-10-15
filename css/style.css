@@ -271,11 +271,8 @@ img {
     color: white;
 }
 /* Портфолио */
-
-.portfolio-list {
-    padding-bottom: 50px;
-    display: flex;
-    justify-content: center;
+.portfolio-menu {
+    margin-bottom: 50px;
 }
 .portfolio-button:not(:last-child) {
     margin-right: 8px;
