@@ -202,8 +202,13 @@ img {
     background-color: #2F303A;
 }
 .footer-content {
+    display: flex;
     padding-top: 60px;
     padding-bottom: 60px;
+}
+.footer-address {
+    width: 270px;
+    margin-left: 0px;
 }
 .studio-footer, .city {
     color: var(--white-color);
