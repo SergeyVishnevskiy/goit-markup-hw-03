@@ -39,7 +39,7 @@ img {
     margin-left: auto;
     margin-right: auto;
     width: 1200px;
-    outline: 4px solid tomato;
+    /* outline: 4px solid tomato; */
 }
 .padding {
     padding-top: 94px;
@@ -172,6 +172,9 @@ img {
 .work-item {
     flex-basis: calc((100% - 2 * 30px) / 3);
 }
+.our_team {
+    background-color: #F5F4FA;
+}
 .team-list {
     display: flex;
     justify-content: space-between;
@@ -180,6 +183,7 @@ img {
 .items-text {
     color: var(--title-text-color);
     line-height: 1.714;
+    font-size: 16px;
 }
 .team-title, .product-title {
     color: var(--primary-text-color);
@@ -207,9 +211,13 @@ img {
     padding-bottom: 60px;
 }
 .footer-address {
-    width: 270px;
+    max-width: 270px;
     margin-left: 0px;
 }
+.address-list {
+    margin-top: 20px;
+}
+
 .studio-footer, .city {
     color: var(--white-color);
 }
@@ -217,6 +225,8 @@ img {
     color: rgba(255, 255, 255, 0.6);
     font-style: normal;
     line-height: 1.71;
+    padding-bottom: 9px;
+
 }
 .contacts-footer:hover, .contacts-footer:focus {
     color: var(--accent-color);
@@ -225,6 +235,7 @@ img {
     font-style: normal;
     font-weight: 400;
     line-height: 1.71;
+    padding-bottom: 9px;
 }
 
 /* button */
@@ -237,6 +248,7 @@ img {
     font-size: 16px;
     border-radius: 4px;
     text-align: center;
+    cursor:pointer
 }
 .primary {
     color: var(--white-color);
@@ -275,17 +287,34 @@ img {
 }
 .portfolio-items:not(:nth-child(3n)) {
     margin-right: 30px;
+    margin-bottom: 30px;
   }
 .product-title {
     font-weight: bold;
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
+    margin-top: 0px;
+    margin-bottom: 4px;
 }
 .product-text {
     color: var(--title-text-color);
     font-size: 16px;
     line-height: 1.86;
+    margin: 0px;
+}
+.card-text {
+    border: 1px solid #EEEEEE;
+    border-top: none;
+    padding: 20px 24px;
+    background-color: #FFFFFF;
+}
+.shadow {
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
 }
 
 /* <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap" rel="stylesheet">
